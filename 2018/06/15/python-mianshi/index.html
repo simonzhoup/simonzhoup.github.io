@@ -100,17 +100,17 @@
 
 
 
-<meta name="description" content="这是这个博客的第一篇文章">
+<meta name="description" content="Python是如何进行内存管理的Answer：从三个方面来说：对象的引用计数机制 垃圾回收机制 内存池机制   引用计数：每一个对象负责维护对象所有引用的计数值。当一个新的引用指向对象时，引用计数器就递增，当去掉一个引用时，引用计数就递减。当引用计数到零时，该对象就将释放占有的资源。   对象的引用计数机制 Python内部使用引用计数，来保持追踪内存中的对象，所有对象都有引用计数。  引用计数增">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第一篇文章">
-<meta property="og:url" content="http://yoursite.com/2018/06/05/hello-world/index.html">
+<meta property="og:title" content="python-mianshi">
+<meta property="og:url" content="http://yoursite.com/2018/06/15/python-mianshi/index.html">
 <meta property="og:site_name" content="bocksee blog">
-<meta property="og:description" content="这是这个博客的第一篇文章">
+<meta property="og:description" content="Python是如何进行内存管理的Answer：从三个方面来说：对象的引用计数机制 垃圾回收机制 内存池机制   引用计数：每一个对象负责维护对象所有引用的计数值。当一个新的引用指向对象时，引用计数器就递增，当去掉一个引用时，引用计数就递减。当引用计数到零时，该对象就将释放占有的资源。   对象的引用计数机制 Python内部使用引用计数，来保持追踪内存中的对象，所有对象都有引用计数。  引用计数增">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-05T00:56:27.351Z">
+<meta property="og:updated_time" content="2018-06-15T08:53:50.879Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第一篇文章">
-<meta name="twitter:description" content="这是这个博客的第一篇文章">
+<meta name="twitter:title" content="python-mianshi">
+<meta name="twitter:description" content="Python是如何进行内存管理的Answer：从三个方面来说：对象的引用计数机制 垃圾回收机制 内存池机制   引用计数：每一个对象负责维护对象所有引用的计数值。当一个新的引用指向对象时，引用计数器就递增，当去掉一个引用时，引用计数就递减。当引用计数到零时，该对象就将释放占有的资源。   对象的引用计数机制 Python内部使用引用计数，来保持追踪内存中的对象，所有对象都有引用计数。  引用计数增">
 
 
 
@@ -139,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/05/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/15/python-mianshi/"/>
 
 
 
 
 
-  <title>第一篇文章 | bocksee blog</title>
+  <title>python-mianshi | bocksee blog</title>
   
 
 
@@ -322,7 +322,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/05/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/15/python-mianshi/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="bocksee">
@@ -339,7 +339,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">第一篇文章</h1>
+          <h1 class="post-title" itemprop="name headline">python-mianshi</h1>
         
 
         <div class="post-meta">
@@ -351,8 +351,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-05T08:56:27+08:00">
-                2018-06-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-15T14:56:00+08:00">
+                2018-06-15
               </time>
             
 
@@ -374,8 +374,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
+                  <a href="/categories/面试/" itemprop="url" rel="index">
+                    <span itemprop="name">面试</span>
                   </a>
                 </span>
 
@@ -392,9 +392,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/06/05/hello-world/#comments" itemprop="discussionUrl">
+                <a href="/2018/06/15/python-mianshi/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/06/05/hello-world/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/06/15/python-mianshi/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -427,10 +427,75 @@
       
 
       
-        <p>这是这个博客的第一篇文章 </p>
-<a id="more"></a>
-<p>以后我将会把一些文章发布在这里，欢迎围观  </p>
-<p>谢谢～</p>
+        <h2 id="Python是如何进行内存管理的"><a href="#Python是如何进行内存管理的" class="headerlink" title="Python是如何进行内存管理的"></a>Python是如何进行内存管理的</h2><p><strong>Answer</strong>：从三个方面来说：<code>对象的引用计数机制</code> <code>垃圾回收机制</code> <code>内存池机制</code> </p>
+<blockquote>
+<p><strong>引用计数：</strong>每一个对象负责维护对象所有引用的计数值。当一个新的引用指向对象时，引用计数器就递增，当去掉一个引用时，引用计数就递减。当引用计数到零时，该对象就将释放占有的资源。</p>
+</blockquote>
+<ul>
+<li><p>对象的引用计数机制</p>
+<p>Python内部使用引用计数，来保持追踪内存中的对象，所有对象都有引用计数。</p>
+<ol>
+<li>引用计数增加的情况<ul>
+<li>对象被分配一个新的别名：y = x </li>
+<li>对象被放入一个容器中(比如列表、元组、字典)</li>
+</ul>
+</li>
+<li>引用计数减少的情况<ul>
+<li>对象引用超出作用域</li>
+<li>对象的一个别名被重新赋值</li>
+<li>对象的别名被销毁<code>del x</code>  <code>mylist.remove(x)</code>  <code>del mylist</code> </li>
+</ul>
+</li>
+</ol>
+<p><code>sys.getrefcount()</code> 函数可以获得当前对象的引用计数。</p>
+</li>
+<li><p>垃圾回收机制</p>
+<ol>
+<li><p>当一个对象的引用计数归零时，它将被垃圾回收机制处理掉。</p>
+</li>
+<li><p>当两个对象a和b相互引用时，del语句可以减少a和b的引用计数，并销毁用于引用底层对象的名称。然而由于每个对象都包含一个对其他对象的应用，</p>
+<p>因此引用计数不会归零，对象也不会销毁。（从而导致内存泄露）。为解决这一问题，解释器会定期执行一个循环检测器，搜索不可访问对象的循环并删除它们。</p>
+</li>
+</ol>
+</li>
+<li><p>内存池机制</p>
+<p>Python提供了对内存的垃圾收集机制，但是它将不用的内存放到内存池而不是返回给操作系统。</p>
+<ol>
+<li>为了加速Python 的执行效率，Python引入了一个内存池机制，用于管理对小块内存的申请和释放。</li>
+<li>Python中所有小于256个字节的对象都使用pymalloc实现的分配器，而大的对象则使用系统的malloc。</li>
+<li>对于Python对象，如整数，浮点数和List，都有其独立的私有内存池，对象间不共享他们的内存池。也就是说如果你分配又释放了大量的整数，用于缓存这些整数的内存就不能再分配给浮点数。</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>参考：</p>
+<p>垃圾回收机制：<a href="https://www.cnblogs.com/Xjng/p/5128269.html" target="_blank" rel="noopener">https://www.cnblogs.com/Xjng/p/5128269.html</a></p>
+<p>内存池机制： <a href="https://blog.csdn.net/alertbear/article/details/50808178" target="_blank" rel="noopener">https://blog.csdn.net/alertbear/article/details/50808178</a></p>
+</blockquote>
+<h2 id="什么是lambda函数？它有什么优点？"><a href="#什么是lambda函数？它有什么优点？" class="headerlink" title="什么是lambda函数？它有什么优点？"></a>什么是lambda函数？它有什么优点？</h2><p><strong>Answer：</strong> lanbda函数通常指匿名函数。</p>
+<p>优点：需要一个函数，而且我们只会需要调用它一次，但是又不想费神去命名一个函数的场合下使用</p>
+<h2 id="Python里面如何拷贝一个对象？（赋值、浅拷贝、深拷贝的区别）"><a href="#Python里面如何拷贝一个对象？（赋值、浅拷贝、深拷贝的区别）" class="headerlink" title="Python里面如何拷贝一个对象？（赋值、浅拷贝、深拷贝的区别）"></a>Python里面如何拷贝一个对象？（赋值、浅拷贝、深拷贝的区别）</h2><p><strong>Answer：</strong></p>
+<ul>
+<li><p>赋值（=）：就是创建了对象的一个新的引用，修改其中任意一个变量都会影响到其它。</p>
+</li>
+<li><p>浅拷贝<code>copy()</code>：拷贝的是对象本身，对象内部的元素只是拷贝了一个引用。也就是，把对象复制一遍，但是该对象中引用的其他对象我不复制</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> copy</span><br><span class="line">a  = [<span class="number">1</span>,<span class="string">'str'</span>,[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]]</span><br><span class="line">b = copy.copy(a)</span><br><span class="line">print(b)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[<span class="number">1</span>,<span class="string">'str'</span>,[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]]</span><br><span class="line">print(id(a),id(b))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">140202879296904</span> <span class="number">140202879395208</span></span><br><span class="line">b[<span class="number">0</span>] = <span class="number">5</span></span><br><span class="line">print(a,b)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[<span class="number">1</span>, <span class="string">'str'</span>, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]] [<span class="number">5</span>, <span class="string">'str'</span>, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]]</span><br><span class="line">b[<span class="number">2</span>][<span class="number">0</span>] = <span class="number">2</span></span><br><span class="line">print(a,b)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[<span class="number">1</span>, <span class="string">'str'</span>, [<span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>]] [<span class="number">5</span>, <span class="string">'str'</span>, [<span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>]]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>深拷贝<code>deepcopy()</code>：外围和内部元素都进行了拷贝对象本身，而不是引用。也就是，把对象复制一遍，并且该对象中引用的其他对象我也复制。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> copy</span><br><span class="line">a  = [<span class="number">1</span>,<span class="string">'str'</span>,[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]]</span><br><span class="line">b = copy.deepcopy(a)</span><br><span class="line">print(b)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[<span class="number">1</span>,<span class="string">'str'</span>,[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]]</span><br><span class="line">print(id(a),id(b))</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">140202879296904</span> <span class="number">140202879395208</span></span><br><span class="line">b[<span class="number">0</span>] = <span class="number">5</span></span><br><span class="line">print(a,b)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[<span class="number">1</span>, <span class="string">'str'</span>, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]] [<span class="number">5</span>, <span class="string">'str'</span>, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]]</span><br><span class="line">b[<span class="number">2</span>][<span class="number">0</span>] = <span class="number">2</span></span><br><span class="line">print(a,b)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>[<span class="number">1</span>, <span class="string">'str'</span>, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]] [<span class="number">5</span>, <span class="string">'str'</span>, [<span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>]]</span><br></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<blockquote>
+<p>1，深浅拷贝都是对源对象的复制，占用不同的内存空间。</p>
+<p>2，不可变类型的对象，对于深浅拷贝毫无影响，最终的地址值和值都是相等的。</p>
+<p>3，可变类型：<br>=浅拷贝： 值相等，地址相等<br>copy浅拷贝：值相等，地址不相等<br>deepcopy深拷贝：值相等，地址不相等</p>
+</blockquote>
+<h2 id="except-的用法"><a href="#except-的用法" class="headerlink" title="except 的用法"></a>except 的用法</h2><p><strong>Answer：</strong><code>try…except…except…[else…][finally…]</code></p>
+<p>执行<code>try</code>下的语句，如果引发异常，则执行过程会跳到<code>except</code>语句。对每个<code>except</code>分支顺序尝试执行，如果引发的异常与<code>except</code>中的异常组匹配，执行相应的语句。</p>
+<p>如果所有的<code>except</code>都不匹配，则异常会传递到下一个调用本代码的最高层<code>try</code>代码中。</p>
+<p><code>try</code>下的语句正常执行，则执行else块代码。</p>
+<p>如果存在finally语句，不管异常引发与否，<code>finally</code>语句都会被执行。</p>
 
       
     </div>
@@ -455,15 +520,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/06/06/django-v2ex-1/" rel="next" title="使用Django仿写V2EX（一）">
+                <i class="fa fa-chevron-left"></i> 使用Django仿写V2EX（一）
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/05/flask/" rel="prev" title="Python web 框架之 Flask（一）">
-                Python web 框架之 Flask（一） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -522,8 +587,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/user.jpeg"
@@ -609,6 +683,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python是如何进行内存管理的"><span class="nav-number">1.</span> <span class="nav-text">Python是如何进行内存管理的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是lambda函数？它有什么优点？"><span class="nav-number">2.</span> <span class="nav-text">什么是lambda函数？它有什么优点？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python里面如何拷贝一个对象？（赋值、浅拷贝、深拷贝的区别）"><span class="nav-number">3.</span> <span class="nav-text">Python里面如何拷贝一个对象？（赋值、浅拷贝、深拷贝的区别）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#except-的用法"><span class="nav-number">4.</span> <span class="nav-text">except 的用法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -773,9 +863,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2018/06/05/hello-world/';
-          this.page.identifier = '2018/06/05/hello-world/';
-          this.page.title = '第一篇文章';
+          this.page.url = 'http://yoursite.com/2018/06/15/python-mianshi/';
+          this.page.identifier = '2018/06/15/python-mianshi/';
+          this.page.title = 'python-mianshi';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://ocooc-cc.disqus.com/embed.js';
